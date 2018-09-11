@@ -1,0 +1,30 @@
+<!--
+ Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2.8 svn-revision#13980. 
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" targetNamespace="http://temenos.com/STMTENTRYWS">
+<xs:complexType name="STMTENTRYWSType">
+<xs:sequence>
+<xs:element name="gSTMTENTRYWSDetailType" minOccurs="0">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="mSTMTENTRYWSDetailType" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ACCOUNTNUMBER" type="xs:string" minOccurs="0"/>
+<xs:element name="AMOUNTLCY" type="xs:string" minOccurs="0"/>
+<xs:element name="EXCHANGERATE" type="xs:string" minOccurs="0"/>
+<xs:element name="CURRENCY" type="xs:string" minOccurs="0"/>
+<xs:element name="AMOUNTFCY" type="xs:string" minOccurs="0"/>
+<xs:element name="VALUEDATE" type="xs:string" minOccurs="0"/>
+<xs:element name="TRANSREFERENCE" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+<xs:attribute name="m" type="xs:positiveInteger"/>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+<xs:attribute name="g" type="xs:positiveInteger"/>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
